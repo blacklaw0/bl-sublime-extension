@@ -1,0 +1,47 @@
+<snippet>
+	<content><![CDATA[
+var store = Ext.create('Ext.data.Store', {
+	model: '${1:Task}',
+	autoLoad: true,
+    autoSync: true,
+    proxy: {
+        type: 'ajax',
+        api: {
+            read: '${2:http://127.0.0.1/extjs/examples/writer/app.php/users/}view',
+            create: '${2:http://127.0.0.1/extjs/examples/writer/app.php/users/}create',
+            update: '${2:http://127.0.0.1/extjs/examples/writer/app.php/users/}update',
+            destroy: '${2:http://127.0.0.1/extjs/examples/writer/app.php/users/}destroy'
+        },
+        reader: {
+            type: 'json',
+            successProperty: 'success',
+            root: 'data',
+            messageProperty: 'message'
+        },
+        writer: {
+            type: 'json',
+            writeAllFields: false,
+            root: 'data'
+        },
+        listeners: {
+            exception: function(proxy, response, operation){
+                Ext.MessageBox.show({
+                    title: 'REMOTE EXCEPTION',
+                    msg: operation.getError(),
+                    icon: Ext.MessageBox.ERROR,
+                    buttons: Ext.Msg.OK
+                });
+            }
+        }
+    },
+    listeners: {
+        write: function(proxy, operation){}
+    }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ext-store-proxy</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<description>ext-store:proxy</description>
+	<scope>source.js</scope>
+</snippet>

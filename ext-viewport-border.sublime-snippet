@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+Ext.create("Ext.container.Viewport",{
+	layout: 'border',
+	items: [
+		Ext.create('Ext.Component',{
+			region: 'north',
+			title: '${1:north}',
+			height: 30
+		}), {
+			region: 'south',
+			title: '${2:south}',
+			height: 150
+		}, {
+			region: 'west',
+			title: '${3:west}',
+			width: 120
+		}, {
+            region: 'east',
+           	title: '${4:east}',
+           	width: 120
+        }, {
+			region: 'center',
+			title: 'center',
+		}
+	]
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ext-viewport-border</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>ext-viewport:border</description>
+</snippet>

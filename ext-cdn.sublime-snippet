@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<!--ext cdn-->
+<link rel="stylesheet" type="text/css" href="${1:http://127.0.0.1/extjs}/resources/css/ext-all.css" />
+<script type="text/javascript" src="${1:http://127.0.0.1/extjs}/ext-all.js"></script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ext-cdn</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+	<description>ext-cdn</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+Ext.define('${1:Task}', {
+	extend: 'Ext.data.Model',
+	fields: [
+		{name: '${2:first}', type: '${3:string}'}	
+		]
+})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ext-model</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>ext-model-normal</description>
+</snippet>

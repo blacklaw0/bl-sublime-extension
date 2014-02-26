@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+var grid = Ext.create('Ext.grid.Panel', {
+	title: '${1:title}',
+	store: ${2:store},
+	width: 500,
+	height: 200,
+	draggable: true,
+	resizable: true,
+	plugins: [Ext.create('Ext.grid.plugin.CellEditing',{
+		clicksToEdit: 2
+	})],
+	dockedItems: [{
+		dock: 'top',
+		xtype: 'toolbar',
+		items: [{
+			text: 'submit',
+			handler: function(){
+				Ext.Msg.alert("title", "content");	
+			}
+		}]
+	}],
+	collapsible: true,
+	
+	columns: [{
+		text: 'name',
+		dataIndex: 'first',
+		field: {
+			xtype: 'textfield'
+		}
+	}]
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ext-grid</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<description>ext-grid-normal</description>
+	<scope>source.js</scope>
+</snippet>
