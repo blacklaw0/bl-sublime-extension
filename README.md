@@ -1,8 +1,8 @@
 Blacklaw Sublime Snippet Extension
 ==================================
-Means same as the title
-It's a Sublime Snippet collection customed by blacklaw
-Following libs included
+Means same as the title  
+It's a Sublime Snippet collection customed by blacklaw  
+Following libs included  
 -----------------------
 + Extjs extension  
 + JQuery extension  
