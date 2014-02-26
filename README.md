@@ -1,7 +1,7 @@
 Blacklaw Sublime Snippet Extension
 ==================================
 Means same as the title
-It's a Sublime Snippet collection customed by <blacklaw00@gmail.com>
+It's a Sublime Snippet collection customed by blacklaw
 Following libs included
 -----------------------
 + Extjs extension  
@@ -18,5 +18,8 @@ code below
 Home Page
 ---------
 [Doctor-h.org](http://www.doctor-h.org)
+Contact Me
+----------
+<blacklaw00@gmail.com>
 
 
